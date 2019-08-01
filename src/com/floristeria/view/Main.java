@@ -12,13 +12,15 @@ public class Main {
 		
 		Controller controller = new Controller();
 
-		System.out.println("Has creado correctamente la floristeria " + flowerPower.getName());
+		System.out.println("Has creat correctament la floristeria " + flowerPower.getName());
 		
-		controller.createDecoration(Entity.getCOUNTER(), "Tabla de madera", 30, true, 20);
-		controller.createFlower(Entity.getCOUNTER(), "Tulipan", 5, "red", 20);
-		controller.createTree(Entity.getCOUNTER(), "Pino", 100, 20.0, 5);
+		controller.createDecoration(Entity.getCOUNTER(), "Taula", 30, true, 20);
+		controller.createDecoration(Entity.getCOUNTER(), "Mesa", 50, false, 30);
+		controller.createFlower(Entity.getCOUNTER(), "Tulipà", 5, "vermell", 20);
+		controller.createTree(Entity.getCOUNTER(), "Pi", 100, 20.0, 5);
+		
 		controller.seeStock();
-	
+		
 	}
 	
 }

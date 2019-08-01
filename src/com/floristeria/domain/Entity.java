@@ -59,13 +59,11 @@ public abstract class Entity {
 		this.name = name;
 	}
 	
-	public void getProperty() {
-		System.out.println(setProperty());
+	@Override
+	public String toString() {
+		return "ID: " + this.getId() + " | Article " + this.getName() +  " | Stock: " + this.getStock() 
+		+ " uds" + " | Preu: " + this.getPrice() + " € ";
 	}
-	
-	public void setProperty() {
-	}
-	
 
 	public abstract void price();
 	public abstract void stock();

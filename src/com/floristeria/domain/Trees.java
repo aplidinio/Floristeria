@@ -2,12 +2,6 @@ package com.floristeria.domain;
 
 public class Trees extends Entity {
 
-	@Override
-	public void setProperty() {
-		// TODO Auto-generated method stub
-		super.setProperty();
-	}
-
 	double height;
 
 	public Trees(int id, String name, double price, double height, int stock) {
@@ -23,8 +17,7 @@ public class Trees extends Entity {
 
 	@Override
 	public void stock() {
-	
-		
+			
 	}
 
 	public double getHeight() {
@@ -33,6 +26,12 @@ public class Trees extends Entity {
 
 	public void setHeight(double height) {
 		this.height = height;
+	}
+	
+	@Override
+	public String toString() {
+		
+		return super.toString()+ "| Alçada: " + this.height + " m";
 	}
 
 }

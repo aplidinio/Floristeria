@@ -2,13 +2,8 @@ package com.floristeria.domain;
 
 public class Decoration extends Entity {
 
-	@Override
-	public void setProperty() {
-		// TODO Auto-generated method stub
-		super.setProperty();
-	}
-
-	boolean isWood; // wood or plastic
+	boolean isWood;
+	String material;// wood or plastic
 
 	public Decoration(int id, String name, double price, boolean isWood, int stock) {
 		super(id, name, price, stock);
@@ -19,13 +14,11 @@ public class Decoration extends Entity {
 	@Override
 	public void price() {
 		
-
 	}
 	
 	@Override
 	public void stock() {
-	
-		
+			
 	}
 
 	public boolean isWood() {
@@ -34,6 +27,19 @@ public class Decoration extends Entity {
 
 	public void setWood(boolean isWood) {
 		this.isWood = isWood;
+		
+		if (isWood) {
+			material="fusta";
+		} else {
+			material="plàstic";
+		}
+			
 	}
 
+	@Override
+	public String toString() {
+					
+		setWood(isWood);
+		return super.toString() + "| Material: " + material;
+	}
 }

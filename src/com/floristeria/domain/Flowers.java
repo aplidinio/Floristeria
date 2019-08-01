@@ -25,14 +25,14 @@ public class Flowers extends Entity {
 		return color;
 	}
 
-	@Override
-	public void setProperty() {
-		// TODO Auto-generated method stub
-		super.setProperty();
-	}
-
 	public void setColor(String color) {
 		this.color = color;
 	}
 
+	@Override
+	public String toString() {
+				
+		return super.toString()+ "| Color: " + this.getColor();
+	}
+	
 }
